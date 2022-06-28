@@ -15,7 +15,7 @@ def timeInWords(h, m):
         day = ['', 'ten', 'twenty', 'thirty', 'forty', 'fifty']
         if(dy < 20):
             return days[dy]
-        return day[dy/10] + ' ' + days[dy%10]       
+        return day[dy//10] + ' ' + days[dy%10]       
     def manu(dy):
         w = word(dy)
         if(dy == 1):
